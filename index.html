@@ -19,11 +19,20 @@
   </header>
   <main class="main">
     <form action="" method="get" id="evaluation-form">
-      <input type="text" name="name" id="input-name" placeholder="Nome" autocomplete="off">
-      <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome" autocomplete="off">
-      <input type="text" name="email" id="input-email" placeholder="Email" autocomplete="off">    </form>
+      <div class="div-form">
+        <input type="text" name="name" class="input-form" id="input-name" placeholder="Nome" autocomplete="off">
+        <input type="text" name="lastname" class="input-form" id="input-lastname" placeholder="Sobrenome" autocomplete="off">
+      </div class="div-form">
+      <input type="text" name="email" id="input-email" placeholder="Email" autocomplete="off">
+      <select name="house" id="house">
+        <option value="Gitnória" text="Gitnória" id="gitnoria-house">Gitnória</option>
+        <option value="Reactpuff" text="Reactpuff" id="reactpuff-house" >Reactpuff</option>
+        <option value="Corvinode" text="Corvinode" id="corvinode-house" >Corvinode</option>
+        <option value="Pytherina" text="Pytherina" id="pytherina-house" >Pytherina</option>
+      </select>
+     </form>
     <img src="images/trybewarts-colored.svg" alt="brasão Trybewarts" id="trybewarts-forms-logo">
   </main>
   <script src="script.js"></script>
 </body>
-</html>
+</html> 

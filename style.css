@@ -30,3 +30,16 @@
   height: 500px;
   margin-right: 20px;
 }
+
+/* Refencia ao requisito 10: Alinhamento de inputs.
+https://github.com/tryber/sd-018-a-project-trybewarts/pull/
+81/commits/868e3f6ff8dc8dc07ec92cf24e73eaeee97da290 */
+
+.div-form {
+  display: flex;
+
+}
+
+.input-form {
+  flex-grow: 1;
+}
