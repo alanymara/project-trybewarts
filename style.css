@@ -97,3 +97,24 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
 .checkbox-conteudo label {
   flex-basis: 33%;
 }
+
+.div-avalia {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.div-escala {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 65%;
+}
+
+.div-escala label {
+  align-self: flex-end;
+}
+
+#label-rate {
+  flex-basis: 35%;
+  flex-shrink: 1;
+}
