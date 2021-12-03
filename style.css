@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -35,11 +40,33 @@
 https://github.com/tryber/sd-018-a-project-trybewarts/pull/
 81/commits/868e3f6ff8dc8dc07ec92cf24e73eaeee97da290 */
 
+/* divs formularios - campo Nome e sobrenome */
 .div-form {
   display: flex;
 
 }
 
 .input-form {
+  flex-grow: 1;
+}
+
+/* divs formularios - campos Email e select */
+.container-emailSelect {
+  display: flex;
+}
+
+.div-email {
+  display: flex;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.div-select {
+  display: flex;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.div-select .select {
   flex-grow: 1;
 }
