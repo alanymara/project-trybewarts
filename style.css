@@ -118,3 +118,8 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
   flex-basis: 35%;
   flex-shrink: 1;
 }
+
+.div-comentario {
+  display: flex;
+  flex-direction: column;
+}
