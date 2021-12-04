@@ -124,3 +124,21 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
   display: flex;
   flex-direction: column;
 }
+
+#textarea {
+  width: 100%;
+  resize: none;
+}
+
+/* https://www.w3schools.com/cssref/css3_pr_transform.asp
+referencia ao código do Alan Fernandes CSS Translate */
+
+#counter {
+  display: flex;
+  align-self: flex-end;
+  transform: translate(-8px, -20px);
+}
+
+h5 {
+  text-align: center;
+}

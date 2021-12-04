@@ -24,20 +24,23 @@ console.log('valor do check:', checkboxVerifica);
 function verificaCheckAgreement() {
   if (checkboxVerifica.checked === true) {
     btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
   }
 }
 checkboxVerifica.addEventListener('click', verificaCheckAgreement);
 
 // https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea
-function limiteDeCarac(valor) {
+function limiteDeCarac() {
+  console.log('retorna event', textarea.value);
   const quantMax = 500;
-  const total = valor.length;
+  const total = textarea.value.length;
   if (total <= quantMax) {
     const restante = quantMax - total;
     document.getElementById('counter').innerHTML = restante;
   } else {
-    document.getElementById('textarea').value = valor.substr(0, quantMax);
+    document.getElementById('textarea').value = textarea.value.substr(0, quantMax);
   }
 }
 
-textarea.addEventListener('click', limiteDeCarac);
+textarea.addEventListener('keyup', limiteDeCarac);
