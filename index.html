@@ -25,7 +25,7 @@
   <main class="main">
 
     <form action="" method="get" id="evaluation-form">
-
+      <h2>Formulário de Avaliação</h2>
       <div class="div-form">
         <input type="text" name="name" class="input-form" id="input-name" placeholder="Nome" autocomplete="off">
         <input type="text" name="lastname" class="input-form" id="input-lastname" placeholder="Sobrenome" autocomplete="off">
@@ -125,7 +125,8 @@
 
       <div class="div-comentario">
         <label class="textarea" for="">Deixe seu comentário:</label>
-        <textarea id="textarea" maxlength="500" rows="10" cols="30"></textarea>
+        <textarea id="textarea" maxlength="500" rows="10" cols="30" onkeyup="limiteDeCarac(this.value)"></textarea>
+        <span id="counter">500</span>
       </div>
       <div>
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
