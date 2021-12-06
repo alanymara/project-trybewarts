@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Thasadith&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -15,9 +18,11 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
     <form action="" method="get" class="trybewarts-login">
-      <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
-      <input type="password" name="password" id="password" placeholder="Senha" autocomplete="off">
-      <button id="btnLogin">Entrar</button>
+       <div class="login">
+        <input type="email" class="input" name="email" id="email" placeholder="Email" autocomplete="off">
+        <input type="password" class="input" name="password" id="password" placeholder="Senha" autocomplete="off">
+        <button id="btnLogin">Entrar</button>
+      </div> 
     </form>
 
   </header>
@@ -25,20 +30,20 @@
   <main class="main">
 
     <form action="" method="get" id="evaluation-form">
-      <h2>Formulário de Avaliação</h2>
+      <h2 id="title-form">Formulário de Avaliação</h2>
       <div class="div-form">
-        <input type="text" name="name" class="input-form" id="input-name" placeholder="Nome" autocomplete="off">
-        <input type="text" name="lastname" class="input-form" id="input-lastname" placeholder="Sobrenome" autocomplete="off">
+        <input type="text" name="name" class="input-form input" id="input-name" placeholder="Nome" autocomplete="off">
+        <input type="text" name="lastname" class="input-form input" id="input-lastname" placeholder="Sobrenome" autocomplete="off">
       </div>
 
       <div class="container-emailSelect">
         <div class="div-email">
-          <input type="text" name="email" id="input-email" placeholder="Email" class="input-form" autocomplete="off">
+          <input type="text" name="email" id="input-email" placeholder="Email" class="input-form input" autocomplete="off">
         </div> 
 
         <div class="div-select">
           <label for="house">Casa:</label>
-          <select name="house" id="house" class="select"> 
+          <select name="house" id="house" class="select input"> 
             <option value="Gitnória" text="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" text="Reactpuff" id="reactpuff-house" >Reactpuff</option>
             <option value="Corvinode" text="Corvinode" id="corvinode-house" >Corvinode</option>
@@ -49,12 +54,12 @@
 
       <div class="div-familia-conteudo">
         <div  class="div-familia">
-          <label for="" id="label-family">Qual sua família?</label> <br>
+          <label for="" id="label-family">Qual sua família?</label>
           <label for="Frontend">
             <input type="radio" name="family" id="Frontend" value="Frontend"> Frontend
           </label>
           <label for="Backend">
-            <input type="radio" name="family" id="Backend" value="Backend"> Backend <br>
+            <input type="radio" name="family" id="Backend" value="Backend"> Backend
           </label>
           <label for="FullStack">
             <input type="radio" name="family" id="FullStack" value="FullStack"> FullStack
@@ -129,7 +134,7 @@
         <span id="counter">500</span>
       </div>
 
-      <div>
+      <div class="">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
         <input type="checkbox" name="" id="agreement" value="true">
         </label>
@@ -143,7 +148,7 @@
   </main>
 
   <footer>
-    <h5>Direitos reservados à Trybewarts©</h5>
+    <h3>Direitos reservados à Trybewarts©</h3>
   </footer>
 
   <script src="script.js"></script>

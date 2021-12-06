@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(239, 239, 239);
+  font-family: Inknut Antiqua, serif;
+  font-size: 15px;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -12,6 +18,11 @@
 .trybewarts-header-logo {
   width: 100px;
   margin-left: 20px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 2.5em;
 }
 
 .trybewarts-login {
@@ -24,17 +35,22 @@
 .main {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin: 30px;
+}
+
+#title-form {
+  text-align: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin-right: 20px;
 }
 
 /* Refencia ao requisito 10: Alinhamento de inputs.
@@ -54,6 +70,7 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
 /* divs formularios - campos Email e select */
 .container-emailSelect {
   display: flex;
+  padding-bottom: 15px;
 }
 
 .div-email {
@@ -66,6 +83,7 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
   display: flex;
   width: 50%;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .div-select .select {
@@ -75,17 +93,21 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
 /* divs formularios - Perguntas sobre família e conteúdos */
 .div-familia-conteudo {
   display: flex;
+  border-top: solid 1px rgb(160, 160, 160);
+  border-bottom: solid 1px rgb(160, 160, 160);
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .div-familia {
-  width: 50%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
 
 .div-conteudo {
   display: flex;
-  width: 50%;
+  width: 65%;
   flex-direction: column;
 }
 
@@ -102,33 +124,71 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
 .div-avalia {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 
 .div-escala {
   display: flex;
   justify-content: space-between;
-  flex-basis: 65%;
+  flex-basis: 70%;
 }
 
 .div-escala label {
   align-self: flex-end;
+  flex-basis: 60%;
 }
 
 #label-rate {
-  flex-basis: 35%;
-  flex-shrink: 1;
+  flex-basis: 50%;
 }
 
 .div-comentario {
   display: flex;
   flex-direction: column;
+  height: 250px;
+  margin-bottom: -55px;
 }
 
 #textarea {
   width: 100%;
   resize: none;
+  border: 1px solid rgb(78, 44, 131);
+  border-radius: 4px;
 }
+
+#submit-btn , #btnLogin {
+  background-color: rgb(78, 44, 131);
+  color: white;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: Inknut Antiqua, serif;
+  font-weight: 600;
+}
+
+#btnLogin {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+
+}
+
+.input {
+  border: none;
+  padding: 7px 15px;
+  margin: 7px 3px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: Inknut Antiqua, serif;
+
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
 
 /* https://www.w3schools.com/cssref/css3_pr_transform.asp
 referencia ao código do Alan Fernandes CSS Translate */
@@ -136,9 +196,16 @@ referencia ao código do Alan Fernandes CSS Translate */
 #counter {
   display: flex;
   align-self: flex-end;
-  transform: translate(-8px, -20px);
+  transform: translate(-8px, -33px);
 }
 
-h5 {
+footer {
+  background-color: rgb(61, 61, 61);
+  height: 50px;
+  padding-top: 5px;
+}
+
+h3 {
   text-align: center;
+  color: white;
 }
