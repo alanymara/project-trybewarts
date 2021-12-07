@@ -62,11 +62,12 @@ function substituiFormulario(event) {
   event.preventDefault();
   let tecs = '';
   for (let i = 0; i < tecnologias.length; i += 1) {
-    tecs += `${tecnologias[i].value}, `;
+    tecs += `${tecnologias[i].value} `;
   }
   formEvaluation.innerText = `
     Nome: ${inputName.value} ${inputLastName.value}
-    Email: ${inputEmailForm.value} Casa: ${selectHouse.value}
+    Email: ${inputEmailForm.value} 
+    Casa: ${selectHouse.value}
     Família: ${familiaTec.value} 
     Matérias: ${tecs} 
     Avaliação: ${notasAvalia.value}
