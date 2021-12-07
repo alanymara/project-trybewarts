@@ -44,7 +44,8 @@
         <div class="div-select">
           <label for="house">Casa:</label>
           <select name="house" id="house" class="select input"> 
-            <option value="Gitnória" text="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Seleciona" text="Seleciona" id="seleciona-house" >Selecione sua casa</option>
+            <option value="Gitnória" text="Gitnória" id="gitnoria-house" >Gitnória</option>
             <option value="Reactpuff" text="Reactpuff" id="reactpuff-house" >Reactpuff</option>
             <option value="Corvinode" text="Corvinode" id="corvinode-house" >Corvinode</option>
             <option value="Pytherina" text="Pytherina" id="pytherina-house" >Pytherina</option>
@@ -67,26 +68,36 @@
         </div>
 
         <div class="div-conteudo">
+
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-           <div class="checkbox-conteudo">
-            <label for="hofs">
-              <input type="checkbox" name="hofs" id="hofs" value="HoFs">HoFs
-            </label>
-            <label for="jest">
-              <input type="checkbox" name="jest" id="jest" value="Jest">Jest
-            </label>
-            <label for="promises">
-              <input type="checkbox" name="promises" id="promises" value="Promises">Promises
-            </label>
-            <label for="react">
-              <input type="checkbox" name="react" id="react" value="React">React
-            </label>
-            <label for="sql">
-              <input type="checkbox" name="sql" id="sql" value="SQL">SQL
-            </label>
-            <label for="python">
-              <input type="checkbox" name="phyton" id="phyton" value="Python">Python
-            </label>
+
+          <div class="checkbox-conteudo">
+            <div class="checkbox-group">
+
+              <input type="checkbox" name="hofs" id="hofs" value="HoFs" class="subject">
+              <label for="hofs">HoFs</label>
+  
+              <input type="checkbox" name="jest" id="jest" value="Jest" class="subject">
+              <label for="jest">Jest</label>            
+  
+              <input type="checkbox" name="promises" id="promises" value="Promises" class="subject">
+              <label for="promises">Promises</label>
+
+            </div> 
+
+            <div class="checkbox-group">
+
+              <input type="checkbox" name="react" id="react" value="React" class="subject">
+              <label for="react">React</label>
+  
+              <input type="checkbox" name="sql" id="sql" value="SQL" class="subject">
+              <label for="sql">SQL</label>
+              
+              <input type="checkbox" name="python" id="python" value="Python" class="subject">
+              <label for="python">Python</label>
+
+            </div>
+
           </div>
         </div>
       </div>

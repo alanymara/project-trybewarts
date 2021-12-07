@@ -117,6 +117,11 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
   width: 100%;
 }
 
+.checkbox-group {
+  flex-wrap: wrap;
+  height: 100%;
+}
+
 .checkbox-conteudo label {
   flex-basis: 33%;
 }
