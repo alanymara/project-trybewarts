@@ -62,7 +62,7 @@ function substituiFormulario(event) {
   event.preventDefault();
   let tecs = '';
   for (let i = 0; i < tecnologias.length; i += 1) {
-    tecs += `${tecnologias[i].value} `;
+    tecs += `${tecnologias[i].value}, `;
   }
   formEvaluation.innerText = `
     Nome: ${inputName.value} ${inputLastName.value}
