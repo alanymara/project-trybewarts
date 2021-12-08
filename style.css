@@ -116,6 +116,13 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
   display: flex;
   flex-flow: column wrap;
   width: 100%;
+  align-items: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.checkbox-conteudo label {
+  padding-right: 70px;
 }
 
 .div-avalia {
@@ -145,6 +152,10 @@ https://github.com/tryber/sd-018-a-project-trybewarts/pull/
   flex-direction: column;
   height: 250px;
   margin-bottom: -55px;
+}
+
+#hofs {
+  margin-left: 10px;
 }
 
 #textarea {
